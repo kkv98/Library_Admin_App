@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.kkv.library.libraryadmin.Login">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:id="@+id/tv1"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name:"
+        android:textSize="20dp"
+        android:layout_below="@+id/tv1"
+        android:id="@+id/tv2"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:id="@+id/ev1"
+        android:inputType="text"
+        android:hint="Enter your email id"
+        android:padding="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="20dp"
+        android:layout_below="@+id/ev1"
+        android:id="@+id/tv3"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/ev2"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:hint="Enter your password"
+        android:padding="20dp"
+        android:password="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev2"
+        android:id="@+id/butmlogin"
+        android:text="LOGIN"
+        android:padding="10dp"
+        android:theme="@style/MyButton"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold" />
+    <TextView
+       android:layout_above="@id/help"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text="Any Problem In Login"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/help"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="kkv8898@gmail.com"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/pb"
+        android:layout_margin="30dp"
+        />
+
+</RelativeLayout>

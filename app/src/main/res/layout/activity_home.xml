@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.kkv.library.libraryadmin.Home">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/funame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Hi "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/faddbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/funame"
+            android:layout_centerHorizontal="true"
+            android:text="Add Book"
+            android:textColor="#ffffff"
+            android:theme="@style/MyButton" />
+
+        <Button
+            android:id="@+id/fdisplayallbooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/faddbook"
+            android:layout_centerHorizontal="true"
+            android:text="View All Books"
+            android:textColor="#ffffff"
+            android:theme="@style/MyButton" />
+
+        <Button
+            android:id="@+id/searchb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fdisplayallbooks"
+            android:layout_centerHorizontal="true"
+            android:text="Search Book"
+            android:textColor="#ffffff"
+            android:theme="@style/MyButton" />
+
+        <Button
+            android:id="@+id/issueb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchb"
+            android:layout_centerHorizontal="true"
+            android:text="Issue Book"
+            android:textColor="#ffffff"
+            android:theme="@style/MyButton" />
+        <Button
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/issueb"
+            android:layout_centerHorizontal="true"
+            android:text="Users In Library"
+            android:textColor="#ffffff"
+            android:theme="@style/MyButton" />
+        <Button
+            android:id="@+id/fsprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:textColor="#ffffff"
+            android:theme="@style/MyButton" />
+
+    </RelativeLayout>
+
+</ScrollView>

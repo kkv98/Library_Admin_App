@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.kkv.library.libraryadmin.AddBook">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Name"
+        android:inputType="text"
+        android:id="@+id/fbookname"/>
+    <EditText
+        android:layout_below="@+id/fbookname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Id"
+        android:inputType="text"
+        android:id="@+id/fbookid"/>
+    <EditText
+        android:layout_below="@+id/fbookid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Author Name"
+        android:id="@+id/fauthorname"/>
+    <EditText
+        android:layout_below="@+id/fauthorname"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="No. Of Copies"
+        android:id="@+id/fnoofcopy"/>
+
+    <Button
+        android:id="@+id/fadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:theme="@style/MyButton"
+        android:textColor="#ffffff"
+        android:onClick="adddd"
+        android:layout_below="@+id/fnoofcopy"/>
+</RelativeLayout>
